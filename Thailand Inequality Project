@@ -1,0 +1,28 @@
+#Setting working directory
+import os
+os.chdir(r"C:\Users\angus\Desktop\Thailand Python Project")
+
+#Importing Packages
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+
+
+
+
+#Loading in Data
+Thailand_ONS_Gini = pd.read_csv("Thailand National Statistics Office Gini Coefficeints.csv")
+print(Thailand_ONS_Gini.head())
+
+World_Inequality_Gini = pd.read_csv("OurWorldInData_Gini_Global.csv")
+print(World_Inequality_Gini.head())
+
+
+#Explore the Data
+
+print(Thailand_ONS_Gini.columns)
+print(Thailand_ONS_Gini.describe())
+
+
+#Is Inequality Rising or Falling in each region 
